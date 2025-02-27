@@ -1,12 +1,21 @@
 # Pautas principales
-Cuenta en git
-Crear repositorio
-Crear ssh
-Vincular repositorio en oredenador local
-Crear entorno virtual
-Verificar instalacion python y version 
+
+1.Preparacion entorno:
+    Cuenta en git
+    Crear repositorio
+    Crear ssh en lcoal y vincular a cuenta git
+    
+    Verificar instalacion python y version 
+    Vincular repositorio en ordenador local
+    Crear entorno virtual
+    Test commit 
+
+2.Preparacion codigo:
+    Lectura enunciado
+    Estructura de carpetas recomendada
 
 
+########################################################################################################
 
 # Descargar proyecto de git
 git clone "https link" or "ssh"
@@ -49,3 +58,21 @@ Realiza un commit para registrar los cambios
 Para subir los cambios a tu repositorio remoto en GitHub
     git push origin main
     Si estás trabajando en una rama diferente a main, reemplaza main con el nombre de la rama en la que estás trabajando
+
+# Estrucutra carpetas recomendada
+
+📦 mi_proyecto/
+ ┣ 📂 src/                  # Código fuente del proyecto
+ ┃ ┣ 📂 modulo1/            # Un módulo específico (puedes tener varios)
+ ┃ ┃ ┣ 📜 __init__.py       # Indica que este directorio es un paquete de Python
+ ┃ ┃ ┣ 📜 clase1.py         # Definición de clases dentro del módulo
+ ┃ ┃ ┣ 📜 clase2.py         
+ ┃ ┣ 📜 main.py             # Punto de entrada principal del programa
+ ┣ 📂 tests/                # Pruebas unitarias (usando unittest o pytest)
+ ┃ ┣ 📜 test_clase1.py      
+ ┃ ┣ 📜 test_clase2.py      
+ ┣ 📂 docs/                 # Documentación del proyecto
+ ┣ 📜 requirements.txt       # Dependencias del proyecto (si usas pip)
+ ┣ 📜 .gitignore             # Archivos y carpetas a ignorar en Git
+ ┣ 📜 README.md              # Descripción del proyecto
+ ┣ 📜 setup.py               # (Opcional) Para convertirlo en un paquete instalable
