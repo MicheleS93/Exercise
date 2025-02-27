@@ -1,0 +1,50 @@
+Zoo Animal Management System
+You are tasked with developing a Zoo Animal Management System using Python. 
+The system should manage information about various animals, their species, diets, and habitats. 
+This exercise will help you practice object-oriented programming (OOP) concepts, including inheritance and polymorphism.
+
+Requirements
+1. Classes and Inheritance:
+
+• Animal: An abstract base class to represent a general animal with attributes such as 
+            name, age, species, and diet. Methods should include:
+                • __init__ to initialize the animal details.
+                • __str__ to provide a string representation of the animal.
+                • An abstract method make_sound that must be overridden by subclasses to
+                print the sound the animal makes.
+
+• Mammal: A subclass of Animal to represent mammals with an additional attribute
+fur_color. Methods should include:
+• __init__ to initialize mammal details including fur color.
+• __str__ to provide a string representation of the mammal.
+• Override the make_sound method to print a sound specific to mammals.
+• Bird: A subclass of Animal to represent birds with an additional attribute wing_span. Methods should include:
+• __init__ to initialize bird details including wing span.
+• __str__ to provide a string representation of the bird.
+• Override the make_sound method to print a sound specific to birds.
+• Reptile: A subclass of Animal to represent reptiles with an additional attribute scale_type. Methods should include:
+• __init__ to initialize reptile details including scale type.
+• __str__ to provide a string representation of the reptile.
+• Override the make_sound method to print a sound specific to reptiles.
+2. Data Management:
+• Maintain a list of all animals in the zoo.
+3. Functionality:
+• Add Animal: Add a new animal to the zoo. The type of animal (Mammal, Bird, Reptile) should determine the subclass used.
+• Remove Animal: Remove an animal from the zoo using its name.
+• List Animals: List all animals in the zoo with their details.
+• Make All Animals Sound: Invoke the make_sound method for each animal in the
+zoo to print the sound they make.
+• Find Animals by Species: Find all animals of a specific species.
+• List Animals by Type: List all animals of a specific type (Mammal, Bird, Reptile).
+4. Advanced Requirements:
+• Ensure that animal names are unique.
+• Implement error handling for cases like adding an animal with a duplicate name,
+removing a non-existent animal, etc.
+# Create the zoo management system zoo = ZooManagementSystem()
+# Add animals
+zoo.add_animal("Lion", 5, "Panthera leo", "Carnivore", "Mammal", fur_color="Golden") zoo.add_animal("Eagle", 3, "Aquila chrysaetos", "Carnivore", "Bird", wing_span=2.1) zoo.add_animal("Python", 2, "Python regius", "Carnivore", "Reptile", scale_type="Smooth")
+# List all animals zoo.list_animals()
+# Make all animals sound zoo.make_all_animals_sound()
+# Find animals by species zoo.find_animals_by_species("Panthera leo")
+# List all mammals zoo.list_animals_by_type("Mammal")
+# Remove an animal zoo.remove_animal("Eagle")

@@ -1,5 +1,12 @@
-# Exercise
-Este proyecto sirve para practicar los nuevos temas de estudio
+# Pautas principales
+Cuenta en git
+Crear repositorio
+Crear ssh
+Vincular repositorio en oredenador local
+Crear entorno virtual
+Verificar instalacion python y version 
+
+
 
 # Descargar proyecto de git
 git clone "https link" or "ssh"
@@ -33,9 +40,8 @@ Verificar si hay cambios
 
 Añadir los cambios al área de preparación
     git add .
-
-Si solo quieres agregar archivos específicos
-    git add archivo1.py archivo2.txt
+    * Si solo quieres agregar archivos específicos
+        git add archivo1.py archivo2.txt
 
 Realiza un commit para registrar los cambios
     git commit -m "Mensaje descriptivo de los cambios realizados"
