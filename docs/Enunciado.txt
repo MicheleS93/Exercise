@@ -6,28 +6,29 @@ This exercise will help you practice object-oriented programming (OOP) concepts,
 Requirements
 1. Classes and Inheritance:
 
-• Animal: An abstract base class to represent a general animal with attributes such as 
-            name, age, species, and diet. Methods should include:
+• Animal: An abstract base class to represent a general animal with attributes such as name, age, species, and diet. Methods should include:
                 • __init__ to initialize the animal details.
                 • __str__ to provide a string representation of the animal.
-                • An abstract method make_sound that must be overridden by subclasses to
-                print the sound the animal makes.
+                • An abstract method make_sound that must be overridden by subclasses to print the sound the animal makes.
 
-• Mammal: A subclass of Animal to represent mammals with an additional attribute
-fur_color. Methods should include:
-• __init__ to initialize mammal details including fur color.
-• __str__ to provide a string representation of the mammal.
-• Override the make_sound method to print a sound specific to mammals.
+• Mammal: A subclass of Animal to represent mammals with an additional attribute fur_color. Methods should include:
+                • __init__ to initialize mammal details including fur color.
+                • __str__ to provide a string representation of the mammal.
+                • Override the make_sound method to print a sound specific to mammals.
+
 • Bird: A subclass of Animal to represent birds with an additional attribute wing_span. Methods should include:
-• __init__ to initialize bird details including wing span.
-• __str__ to provide a string representation of the bird.
-• Override the make_sound method to print a sound specific to birds.
+                • __init__ to initialize bird details including wing span.
+                • __str__ to provide a string representation of the bird.
+                • Override the make_sound method to print a sound specific to birds.
+
 • Reptile: A subclass of Animal to represent reptiles with an additional attribute scale_type. Methods should include:
-• __init__ to initialize reptile details including scale type.
-• __str__ to provide a string representation of the reptile.
-• Override the make_sound method to print a sound specific to reptiles.
+                • __init__ to initialize reptile details including scale type.
+                • __str__ to provide a string representation of the reptile.
+                • Override the make_sound method to print a sound specific to reptiles.
+
 2. Data Management:
 • Maintain a list of all animals in the zoo.
+
 3. Functionality:
 • Add Animal: Add a new animal to the zoo. The type of animal (Mammal, Bird, Reptile) should determine the subclass used.
 • Remove Animal: Remove an animal from the zoo using its name.
@@ -36,6 +37,7 @@ fur_color. Methods should include:
 zoo to print the sound they make.
 • Find Animals by Species: Find all animals of a specific species.
 • List Animals by Type: List all animals of a specific type (Mammal, Bird, Reptile).
+
 4. Advanced Requirements:
 • Ensure that animal names are unique.
 • Implement error handling for cases like adding an animal with a duplicate name,
