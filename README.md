@@ -14,7 +14,6 @@
     Lectura enunciado
     Estructura de carpetas recomendada
 
-
 ########################################################################################################
 
 # Descargar proyecto de git
@@ -58,6 +57,22 @@ Realiza un commit para registrar los cambios
 Para subir los cambios a tu repositorio remoto en GitHub
     git push origin main
     Si estás trabajando en una rama diferente a main, reemplaza main con el nombre de la rama en la que estás trabajando
+
+Fast:
+git add .
+git commit -m "Working"
+git push origin main
+
+me guarda el entorno pero el repositorio lo cambia con la misma version del repos
+git stash
+
+actualizar el local sin obligarme a subirlos 
+git pull --rebase
+
+git stash apply
+
+Gestionar paquetes:
+poetry
 
 # Estrucutra carpetas recomendada
 
