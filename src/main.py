@@ -2,7 +2,6 @@ from AbstractClass.Animal import Animal
 from SubClass.Bird import Bird
 from SubClass.Mammal import Mammal
 from SubClass.Reptile import Reptile
-import time  
 from Zoo.Zoo import Zoo
 
 # ------------------------------------------------------------------------------

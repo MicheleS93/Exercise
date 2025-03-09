@@ -15,12 +15,12 @@ class Zoo:
         self.file_path = f"data/{self.name}.json"  # Percorso unico per ogni zoo
         self.animals = self.load_from_json()  # Carica gli animali
 
-    # Definir cómo se representa un objeto en forma de texto (Representación amigable)
     def __str__(self):
         return (
                     f"Bienvenido al Zoo: {self.name}!! \n"
                     f"Actualmente contamos con {len(self.animals)} animal/es."
                 )
+    
     # Metodos
 
     def load_from_json(self):
