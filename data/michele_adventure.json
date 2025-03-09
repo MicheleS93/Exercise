@@ -1,0 +1,38 @@
+[
+    {
+        "date": "2025-03-09 12:32:12",
+        "type": "Bird",
+        "name": "uccellino",
+        "age": 3,
+        "species": "canarino",
+        "diet": "semi",
+        "wing_span": "0,1"
+    },
+    {
+        "date": "2025-03-09 13:13:38",
+        "type": "Mammal",
+        "name": "Lion",
+        "age": 5,
+        "species": "Panthera leo",
+        "diet": "Carnivore",
+        "fur_color": "Golden"
+    },
+    {
+        "date": "2025-03-09 13:14:22",
+        "type": "Bird",
+        "name": "Eagle",
+        "age": 3,
+        "species": "Aquila chrysaetos",
+        "diet": "Carnivore",
+        "wing_span": "2.1"
+    },
+    {
+        "date": "2025-03-09 13:14:54",
+        "type": "Reptile",
+        "name": "Pyhton",
+        "age": 2,
+        "species": "Pyhton regius",
+        "diet": "Carnivore",
+        "scale_type": "Smooth"
+    }
+]

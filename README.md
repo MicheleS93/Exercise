@@ -60,7 +60,7 @@ Para subir los cambios a tu repositorio remoto en GitHub
 
 Fast:
 git add .
-git commit -m "Clase Hija Bird"
+git commit -m "Zoo Animal Management System - COMPLETED"
 git push origin main
 
 me guarda el entorno pero el repositorio lo cambia con la misma version del repos
