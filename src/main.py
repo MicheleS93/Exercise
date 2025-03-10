@@ -47,3 +47,30 @@ print()
 #zoo.find_animals_by_species()
 
 #zoo.list_animals_by_type()
+
+# TODO recuerda que las funciones deberían seguir esta estructura
+'''
+# Example Usage
+zoo = ZooManagementSystem()
+zoo.add_animal("Lion", 5, "Panthera leo", "Carnivore", "Mammal", fur_color="Golden")
+zoo.add_animal("Eagle", 3, "Aquila chrysaetos", "Carnivore", "Bird", wing_span=2.1)
+zoo.add_animal("Python", 2, "Python regius", "Carnivore", "Reptile", scale_type="Smooth")
+
+print("\nList of all animals:")
+zoo.list_animals()
+
+print("\nAnimals making sounds:")
+zoo.make_all_animals_sound()
+
+print("\nFinding animals by species 'Panthera leo':")
+zoo.find_animals_by_species("Panthera leo")
+
+print("\nListing all mammals:")
+zoo.list_animals_by_type("Mammal")
+
+print("\nRemoving 'Eagle':")
+zoo.remove_animal("Eagle")
+
+print("\nList of all animals after removal:")
+zoo.list_animals()
+'''

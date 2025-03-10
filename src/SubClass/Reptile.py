@@ -1,7 +1,9 @@
 from AbstractClass.Animal import Animal
 
+# TODO ver import, igual que la clase anterior
+
 class Reptile(Animal):
-    def __init__(self, name, age, species, diet, scale_type):
+    def __init__(self, name: str, age: int, species: str, diet: str, scale_type: str):
         super().__init__(name, age, species, diet) # Se tiene que pasar solo una vez con todos los param.r
         self.scale_type = scale_type # tipo di squame
 
@@ -15,5 +17,6 @@ class Reptile(Animal):
 
     # sobrescribimos el metodo abstracto de la clase madre
     def make_sound(self):
+        # TODO igual que la clase anterior
         return "SOUND OF REPTILE"
 

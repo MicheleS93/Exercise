@@ -1,7 +1,11 @@
 from AbstractClass.Animal import Animal
 
+# TODO desconozco como te has configurado el entorno, el import no debería ser así ?
+#from src.AbstractClass.Animal import Animal
+
+
 class Mammal(Animal): # Mammifero
-    def __init__(self, name, age, species, diet, fur_color):
+    def __init__(self, name: str, age: int, species: str, diet: str, fur_color: str):
         super().__init__(name, age, species, diet) # Se tiene que pasar solo una vez con todos los param.
         self.fur_color = fur_color # color pelo
 
@@ -15,4 +19,7 @@ class Mammal(Animal): # Mammifero
 
     # sobrescribimos el metodo abstracto de la clase madre
     def make_sound(self):
+        # TODO aquí deberias usar el self, de lo contrario el metodo lo marcaríamos como static.
+        # En este caso, dado que cada animal tiene "en teoría" un "make_sound" propio algo así sería suficiente:
+        # print(f"{self.name} the {self.species} roars or growls!")
         return "SOUND OF MAMMAL"

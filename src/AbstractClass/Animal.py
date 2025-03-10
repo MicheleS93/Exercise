@@ -6,14 +6,15 @@
 from abc import ABC, abstractmethod
 
 
-class Animal(ABC): # QST - es necesario ABC?
+class Animal(ABC): # QST - es necesario ABC? -> si, de esta forma convertimos la clase
+                   # en clas abstracta, sino sería una clase normal
 
     # Atributos de clase
     status = "vivo"
     reino = "Animalia"
     vertebrado = True
 
-    def __init__(self, name, age, species, diet):
+    def __init__(self, name: str, age: int, species: str, diet: str):
         # Atributos de instancia (características que puede tener un objeto)
         self.name = name
         self.age = age
@@ -22,6 +23,7 @@ class Animal(ABC): # QST - es necesario ABC?
 
     # Definir cómo se representa un objeto en forma de texto (Representación amigable)
     def __str__(self):
+        # TODO intenta no mezclar idiomas ;)
         return f"El animal con nombre: {self.name} tiene {self.age} años, es de la especie {self.species} y come solo {self.diet}"
 
     # Metodo abstracto
